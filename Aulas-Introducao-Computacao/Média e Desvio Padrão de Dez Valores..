@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+int i;
+float n, soma = 0, quadrados = 0, media, varianca, desvio;
+
+for (i=0;i<10;i++){
+    scanf (" %f", &n);
+    soma = soma + n;
+    quadrados = quadrados + (n * n);
+}
+
+media = soma/10.0;
+varianca= (quadrados)/10.0 - (media * media);
+desvio = sqrt(varianca);
+
+printf ("%.2f\n", media);
+printf ("%.2f\n", desvio);
+
+return 0;
+
+}
