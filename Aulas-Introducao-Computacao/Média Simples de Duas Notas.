@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+float nota1, nota2, media;
+
+printf ("Adicione sua primeira nota:\n");
+scanf ("%f", &nota1);
+printf ("Adicione sua segunda nota:\n");
+scanf ("%f", &nota2);
+media = (nota1 + nota2)/2.0;
+
+printf ("Aqui esta sua media: %.2f\n", media);
+
+return 0;
+}
+
